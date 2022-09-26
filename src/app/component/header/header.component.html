@@ -4,12 +4,18 @@
         <span style="padding-left: 1%;">
             <mat-button-toggle-group appearance="legacy" name="fontStyle" aria-label="Font Style"
             style="background-color: #a0a0a01f;">
-                <mat-button-toggle value="bold" style="color: #1e2b34;"
-                routerLink="/employees">Employee</mat-button-toggle>
-                <mat-button-toggle value="italic" style="color: #1e2b34;">Providers</mat-button-toggle>
-                <mat-button-toggle value="underline" style="color: #1e2b34;">Invoices In</mat-button-toggle>
-                <mat-button-toggle value="underline" style="color: #1e2b34;">Invoices Out</mat-button-toggle>
-                <mat-button-toggle value="underline" style="color: #1e2b34;">Working Point</mat-button-toggle>
+                <mat-button-toggle value="underline" style="color: #1e2b34;" routerLink="/home">
+                    Home</mat-button-toggle>
+                <mat-button-toggle value="bold" style="color: #1e2b34;" routerLink="/employee">
+                    Employees</mat-button-toggle>
+                <mat-button-toggle value="italic" style="color: #1e2b34;" routerLink="/provider">
+                    Providers</mat-button-toggle>
+                <mat-button-toggle value="underline" style="color: #1e2b34;" routerLink="/invoicesin">
+                    Invoices In</mat-button-toggle>
+                <mat-button-toggle value="underline" style="color: #1e2b34;" routerLink="/invoicesout">
+                    Invoices Out</mat-button-toggle>
+                <mat-button-toggle value="underline" style="color: #1e2b34;" routerLink="/workingpoint">
+                    Working Points</mat-button-toggle>
             </mat-button-toggle-group>
         </span>
         

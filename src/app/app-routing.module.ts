@@ -11,7 +11,7 @@ const routes: Routes = [
     component:HomeComponent
   },
   {
-    path:'employees',
+    path:'employee',
     component:EmployeeComponent
   },
   {
@@ -22,6 +22,36 @@ const routes: Routes = [
     path:'editEmployee/:employeeId',
     component:EmployeeUpdateComponent
   },
+  // {
+  //   path:'invoiceIns',
+  //   component:InvoiceInComponent
+  // },
+
+  // {
+  //   path:'providers',
+  //   component:ProviderComponent
+  // },
+  // {
+  //   path:'newProvider',
+  //   component:ProviderNewComponent
+  // },
+  // {
+  //   path:'editProvider/:providerId',
+  //   component:ProviderUpdate
+  // },
+
+  // {
+  //   path:'workingPoints',
+  //   component:WorkingPointComponent
+  // },
+  // {
+  //   path:'newWorkingPoint',
+  //   component:WorkingPointNewComponent
+  // },
+  // {
+  //   path:'editWorkingPoint/:workingPointId',
+  //   component:WorkingPointUpdateComponent
+  // }
 ];
 
 @NgModule({
