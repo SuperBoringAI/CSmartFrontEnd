@@ -1,47 +1,39 @@
 <div class="employeeTable">
   <div class="container" *ngIf="employeeList.length === 0">
     <p>List is empty</p>
-  </div>
-  
-  <table mat-table [dataSource]="displayedEmployeeDetails" class="mat-elevation-z8 demo-table" *ngFor="let employee of employeeList">
-    Position Column 
-    <ng-container matColumnDef="position">
-      <th mat-header-cell *matHeaderCellDef>1</th>
-    </ng-container>
-  
-    <!-- Name Column -->
+</div>
+ 
+<div>
+  <table mat-table [dataSource]="displayedEmployeeDetails" class="mat-elevation-z8 demo-table" 
+  style="background-color: #e4eaf0; border-style: inset; border-color: #b4b4b98c; border-width: 5px;"
+  *ngFor="let employee of employeeList">
     <ng-container matColumnDef="firstName">
-      <th mat-header-cell *matHeaderCellDef>{{employee.firstName}}</th>
+      <th mat-header-cell *matHeaderCellDef>First Name: {{employee.firstName}}</th>
     </ng-container>
   
-    <!-- Weight Column -->
     <ng-container matColumnDef="lastName">
-      <th mat-header-cell *matHeaderCellDef>{{employee.lastName}}</th>
+      <th mat-header-cell *matHeaderCellDef>Last Name: {{employee.lastName}}</th>
     </ng-container>
   
-    <!-- Symbol Column -->
     <ng-container matColumnDef="cnp">
-      <th mat-header-cell *matHeaderCellDef>{{employee.cnp}}</th>
+      <th mat-header-cell *matHeaderCellDef>CNP: {{employee.cnp}}</th>
     </ng-container>
   
-    <!-- Symbol Column -->
     <ng-container matColumnDef="role">
-      <th mat-header-cell *matHeaderCellDef>{{employee.role}}</th>
+      <th mat-header-cell *matHeaderCellDef>Role: {{employee.role}}</th>
     </ng-container>
   
-    <!-- Symbol Column -->
     <ng-container matColumnDef="studies">
-      <th mat-header-cell *matHeaderCellDef>{{employee.studies}}</th>
+      <th mat-header-cell *matHeaderCellDef>Studies: {{employee.studies}}</th>
     </ng-container>
     
-    <!-- Symbol Column -->
     <ng-container matColumnDef="employmentDate">
-      <th mat-header-cell *matHeaderCellDef>{{employee.employmentDate}}</th>
+      <th mat-header-cell *matHeaderCellDef>Employment date: {{employee.employmentDate}}</th>
     </ng-container>
 
     <ng-container matColumnDef="buttons">
-      <th mat-header-cell *matHeaderCellDef>
-        <button mat-raised-button color="primary">Add</button>
+      <th mat-header-cell *matHeaderCellDef> 
+        <button mat-raised-button color="primary" routerLink="/newEmployee">Add</button>
         <button mat-raised-button color="accent" style="margin-left: 5px;">Edit</button>
         <button mat-raised-button color="warn" style="margin-left: 5px;">Delete</button>
       </th>

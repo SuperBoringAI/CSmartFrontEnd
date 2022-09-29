@@ -11,8 +11,9 @@ import { Employee } from "../../interface/employee";
 export class EmployeeComponent implements OnInit {
   employeeList: Employee[] = [];
 
-  displayedEmployeeDetails: string[] = ['position', 'firstName', 'lastName', 'cnp', 'role', 'studies', 'employmentDate', 'buttons'];
+  displayedEmployeeDetails: string[] = ['firstName', 'lastName', 'cnp', 'role', 'studies', 'employmentDate', 'buttons'];
   dataSource = this.employeeList;
+  countingNumber: number = 1;
 
   constructor(public employeeService: EmployeeService) { }
 
@@ -27,5 +28,9 @@ export class EmployeeComponent implements OnInit {
     this.employeeService.deleteEmployee(id).subscribe(() => {
       window.location.reload();
     });
+  }
+
+  increaseCounting(): void {
+    this.countingNumber = this.countingNumber + 1;
   }
 }
