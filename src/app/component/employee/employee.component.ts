@@ -11,6 +11,9 @@ import { Employee } from "../../interface/employee";
 export class EmployeeComponent implements OnInit {
   employeeList: Employee[] = [];
 
+  displayedEmployeeDetails: string[] = ['position', 'firstName', 'lastName', 'cnp', 'role', 'studies', 'employmentDate', 'buttons'];
+  dataSource = this.employeeList;
+
   constructor(public employeeService: EmployeeService) { }
 
   ngOnInit(): void {
