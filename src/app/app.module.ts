@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatSliderModule } from '@angular/material/slider';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -21,7 +22,6 @@ import { HomeComponent } from './component/home/home.component';
 import { EmployeeComponent } from './component/employee/employee.component';
 import { EmployeeNewComponent } from './component/employee-new/employee-new.component';
 import { EmployeeUpdateComponent } from './component/employee-update/employee-update.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -39,6 +39,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    BrowserAnimationsModule,
     MatSliderModule,
     MatToolbarModule,
     MatIconModule,
