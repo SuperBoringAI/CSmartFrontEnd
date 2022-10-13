@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './component/home/home.component';
+import { EmployeeComponent } from './component/employee-individual/employee.component';
+import { EmployeeListComponent } from './component/employee-list/employee-list.component';
 import { EmployeeNewComponent } from './component/employee-new/employee-new.component';
-import { EmployeeComponent } from './component/employee/employee.component';
 import { EmployeeUpdateComponent } from './component/employee-update/employee-update.component';
 
 const routes: Routes = [
@@ -13,6 +14,10 @@ const routes: Routes = [
   {
     path:'employee',
     component:EmployeeComponent
+  },
+  {
+    path:'employeeList',
+    component:EmployeeListComponent
   },
   {
     path:'newEmployee',

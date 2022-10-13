@@ -13,13 +13,15 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatListModule } from '@angular/material/list';
 import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatCardModule } from '@angular/material/card';
 
 import { AppComponent } from './app.component';
 import { LogoComponent } from './component/logo/logo.component';
 import { HeaderComponent } from './component/header/header.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { HomeComponent } from './component/home/home.component';
-import { EmployeeComponent } from './component/employee/employee.component';
+import { EmployeeComponent } from './component/employee-individual/employee.component';
+import { EmployeeListComponent } from './component/employee-list/employee-list.component';
 import { EmployeeNewComponent } from './component/employee-new/employee-new.component';
 import { EmployeeUpdateComponent } from './component/employee-update/employee-update.component';
 
@@ -31,6 +33,7 @@ import { EmployeeUpdateComponent } from './component/employee-update/employee-up
     FooterComponent,
     HomeComponent,
     EmployeeComponent,
+    EmployeeListComponent,
     EmployeeNewComponent,
     EmployeeUpdateComponent
   ],
@@ -48,7 +51,8 @@ import { EmployeeUpdateComponent } from './component/employee-update/employee-up
     MatButtonToggleModule,
     MatListModule,
     MatButtonModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
